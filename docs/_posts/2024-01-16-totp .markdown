@@ -52,6 +52,8 @@ totp.verify("PUT VALUE FROM APP")
 
 {% endhighlight %}
 
+Above code generates same OTPs as Google Authenticator and we can also validate OTP taken from app.
+
 [totp-wiki]: https://en.wikipedia.org/wiki/Time-based_one-time_password
 [hmac-wiki]: https://en.wikipedia.org/wiki/HMAC-based_one-time_password#Definition
 [pyotp-gh]: https://github.com/pyauth/pyotp
