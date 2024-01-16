@@ -1,0 +1,57 @@
+---
+layout: default
+title: "TOTP"
+---
+
+## TOTP
+
+The [**Time-based One-Time-Password**][totp-wiki] technique is used in multifactor authentication to generate one-time passwords (OTPs). Setting up an authenticator app (such as Google Authenticator) is a requirement for MFA enrollment. A QR code is given to us, which we must scan using an app. The OTP list, which is updated every 30 seconds, will then contain a new entry. In the beginning, it appeared to me that an integration had been set up between an app on my phone and a Google server that served as the token generation server during enrollment. In actuality, a connection to Google or any other server is not necessary. The application obtains all the data when the QR code is scanned in order to produce fresh OTPs every 30 seconds. A QR code comprises:
+
+`otpauth://TYPE/LABEL?PARAMETERS`
+
+e.g.
+
+`otpauth://totp/NAME:ACCOUNT@google.com?secret=SECRET&issuer=ISSUER`
+
+## HMAC
+
+The most crucial component, which is utilized in the computation of each OTP, is secret. We obtain the cryptographic hash ([**HMAC**][hmac-wiki] algorithm), which is the OTP we use for authentication, using this secret and a counter that is based on time intervals of thirty seconds.
+
+The entire token validation process is synchronized at the algorithmic level, and each party is able to independently calculate those values.
+
+## Small experiment
+
+There is an python libary [**pyotp**][pyotp-gh] we can use to generate secret and generate OTPs.
+
+{% highlight python %}
+pip3 install pyotp
+{% endhighlight %}
+
+{% highlight python %}
+import pyotp
+
+# Generate secret -> use it in authenticator app e.g. Google Authenticator
+
+secret = pyotp.random_base32()
+
+# Create TOTP generator based on secret
+
+totp = pyotp.TOTP(secret)
+
+# Generate OTP using TOTP generator
+
+# It changes each 30 seconds
+
+# You can compare it with value from authenticator app
+
+totp.now()
+
+# Verify token
+
+totp.verify("PUT VALUE FROM APP")
+
+{% endhighlight %}
+
+[totp-wiki]: https://en.wikipedia.org/wiki/Time-based_one-time_password
+[hmac-wiki]: https://en.wikipedia.org/wiki/HMAC-based_one-time_password#Definition
+[pyotp-gh]: https://github.com/pyauth/pyotp
