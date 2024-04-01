@@ -3,6 +3,8 @@ layout: default
 title: "React app on Github Pages"
 ---
 
+# React app on Github Pages
+
 This is simple instruction how to deploy your React app on Github Pages
 
 ## Install dependecies
@@ -33,13 +35,13 @@ ssh-keygen -t rsa -b 2048
 
 Create in Github repo deploy key using generated public key
 
-![](https://github.com/barto14753/blog/blob/gh-pages/docs/assets/add_deploy_key.png)
+![](https://raw.githubusercontent.com//barto14753/blog/gh-pages/docs/assets/react-on-github-pages/add_deploy_key.png)
 
 ## Add secret
 
 Create in Github repo secret using generated private key
 
-![](https://github.com/barto14753/blog/blob/gh-pages/docs/assets/add_secret.png)
+![](https://raw.githubusercontent.com//barto14753/blog/gh-pages/docs/assets/react-on-github-pages/add_secret.png)
 
 ## Add Github action
 
@@ -89,7 +91,7 @@ Run `git checkout -b gh-pages` to create new branch dedicated for deployment/bui
 
 Set `gh-pages` branch as a root
 
-![](https://github.com/barto14753/blog/blob/gh-pages/docs/assets/setup=gh-pages.png)
+![](https://raw.githubusercontent.com//barto14753/blog/gh-pages/docs/assets/react-on-github-pages/setup-gh-pages.png)
 
 ## Push changes
 
