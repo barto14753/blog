@@ -3,7 +3,7 @@ layout: default
 title: "TOTP"
 ---
 
-## TOTP
+# TOTP
 
 The [**Time-based One-Time-Password**][totp-wiki] technique is used in multifactor authentication to generate one-time passwords (OTPs). Setting up an authenticator app (such as Google Authenticator) is a requirement for MFA enrollment. A QR code is given to us, which we must scan using an app. The OTP list, which is updated every 30 seconds, will then contain a new entry. In the beginning, it appeared to me that an integration had been set up between an app on my phone and a Google server that served as the token generation server during enrollment. In actuality, a connection to Google or any other server is not necessary. The application obtains all the data when the QR code is scanned in order to produce fresh OTPs every 30 seconds. A QR code comprises:
 
