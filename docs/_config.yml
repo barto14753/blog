@@ -23,13 +23,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   Personal blog
 url: https://barto14753.github.io
 baseurl: /blog
-github_username:  barto14753
+github_username: barto14753
 
 # Build settings
-theme: minima
+theme: jekyll-theme-chirpy
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
