@@ -4,8 +4,7 @@ title: "Hydra Walkthrough"
 ---
 
 # Hydra Walkthrough
-
-Hydra basic walkthrough
+Hydra is a powerful network logon cracker that supports numerous protocols, enabling security professionals to test the strength of passwords by performing brute-force attacks. It is widely used for network security testing, helping to identify weak passwords on various services such as FTP, HTTP, SMTP, and more.
 
 ## Installation
 
