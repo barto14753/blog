@@ -36,13 +36,13 @@ ssh-keygen -t rsa -b 2048
 
 Create in Github repo deploy key using generated public key
 
-![](blog/assets/react-on-github-pages/add_deploy_key.png)
+![](/blog/assets/react-on-github-pages/add_deploy_key.png)
 
 ## Add secret
 
 Create in Github repo secret using generated private key
 
-![](blog/assets/react-on-github-pages/add_secret.png)
+![](/blog/assets/react-on-github-pages/add_secret.png)
 
 ## Add Github action
 
@@ -92,7 +92,7 @@ Run `git checkout -b gh-pages` to create new branch dedicated for deployment/bui
 
 Set `gh-pages` branch as a root
 
-![](blog/assets/react-on-github-pages/setup_gh_pages.png)
+![](/blog/assets/react-on-github-pages/setup_gh_pages.png)
 
 ## Push changes
 
