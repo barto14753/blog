@@ -1,9 +1,11 @@
 ---
 layout: default
 title: "Hydra Walkthrough"
+date: 2024-07-17 12:00:00
 ---
 
 # Hydra Walkthrough
+
 Hydra is a powerful network logon cracker that supports numerous protocols, enabling security professionals to test the strength of passwords by performing brute-force attacks. It is widely used for network security testing, helping to identify weak passwords on various services such as FTP, HTTP, SMTP, and more.
 
 ## Installation
@@ -23,7 +25,9 @@ hydra -h
 ```
 
 ## Prepare attack target - MySQL database
+
 ### Create `init.sql`
+
 ```sql
 -- Create additional users
 CREATE USER 'user1'@'%' IDENTIFIED BY 'password12345';
@@ -39,6 +43,7 @@ FLUSH PRIVILEGES;
 ```
 
 ### Create `docker-compose.yml`
+
 ```yaml
 version: "3.8"
 
