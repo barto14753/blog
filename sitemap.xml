@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://barto14753.github.io/blog/</loc>
+         <lastmod>2024-11-25</lastmod>
+    </url>
+    <url>
+         <loc>https://barto14753.github.io/blog/about/</loc>
+         <lastmod>2024-11-25</lastmod>
+    </url>
+    <url>
+         <loc>https://barto14753.github.io/blog/2024/01/16/totp/</loc>
+         <lastmod>2024-11-25</lastmod>
+    </url>
+    <url>
+         <loc>https://barto14753.github.io/blog/2024/04/01/react-app-on-github-pages/</loc>
+         <lastmod>2024-11-25</lastmod>
+    </url>
+    <url>
+         <loc>https://barto14753.github.io/blog/2024/07/17/hydra-walkthrough/</loc>
+         <lastmod>2024-11-25</lastmod>
+    </url>
+    <url>
+         <loc>https://barto14753.github.io/blog/2024/11/25/simple-development-environment-for-python/</loc>
+         <lastmod>2024-11-25</lastmod>
+    </url>
+    <url>
+         <loc>https://barto14753.github.io/blog/archive/2024/</loc>
+         <lastmod>2024-11-25</lastmod>
+    </url>
+</urlset>
