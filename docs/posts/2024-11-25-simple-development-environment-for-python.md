@@ -18,21 +18,21 @@ Python is a versatile programming language that is widely used in various fields
 
 ## Setting Up Python Development Environment
 
-1. **Install devenv**
+#### 1. **Install devenv**
 
-   First, you need to install the `devenv` tool by running the following command:
+First, you need to install the `devenv` tool by running the following command:
 
-   ```bash
-   curl -L https://devenv.sh | sh
-   ```
+```bash
+curl -L https://devenv.sh | sh
+```
 
-2. **Init devenv**
+#### 2. **Init devenv**
 
-   Initialize the `devenv` tool by running the following command:
+Initialize the `devenv` tool by running the following command:
 
-   ```bash
-   devenv init
-   ```
+```bash
+devenv init
+```
 
 It will create:
 
@@ -40,15 +40,15 @@ It will create:
 - `devenv.nix` - file containing defintion of your development environment
 - `devenv.yaml` - file containing imported packages
 
-3. **Update devenv.nix**
+#### 3. **Update devenv.nix**
 
-   Edit `devenv.nix` file to define your development environment. For example, to set up a Python development environment, you can add the following lines:
+Edit `devenv.nix` file to define your development environment. For example, to set up a Python development environment, you can add the following lines:
 
-   ```nix
-    { pkgs, lib, config, inputs, ... }:
-    {
-    packages = [
-    ];
+```nix
+ { pkgs, lib, config, inputs, ... }:
+ {
+   packages = [
+   ];
 
    languages.python = {
    enable = true;
@@ -60,28 +60,28 @@ It will create:
    enterShell = ''
    jupyter lab
    '';
-   }
+}
 
-   ```
+```
 
-   Example `requirements.txt` file:
+Example `requirements.txt` file:
 
-   ```txt
-   numpy==2.1.3
-   pandas==2.2.3
-   jupyterlab==4.3.0
-   scikit-learn==1.5.2
-   matplotlib==3.9.2
-   seaborn==0.13.2
-   pandas==2.2.3
-   ```
+```txt
+numpy==2.1.3
+pandas==2.2.3
+jupyterlab==4.3.0
+scikit-learn==1.5.2
+matplotlib==3.9.2
+seaborn==0.13.2
+pandas==2.2.3
+```
 
-4. **Enter Development Environment**
+#### 4. **Enter Development Environment**
 
-   To enter the Python development environment, run the following command:
+To enter the Python development environment, run the following command:
 
-   ```bash
-   devenv shell
-   ```
+```bash
+devenv shell
+```
 
-   This will activate the Python environment and you can start coding and testing your projects.
+This will activate the Python environment and you can start coding and testing your projects.
